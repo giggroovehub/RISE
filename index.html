@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Startup - Startup Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .service-icon i {
+    color: #007bff; /* Change this to your preferred color */
+    font-size: 3.5rem; /* Adjust size as needed */
+}
+
+
+
+.services-container {
+            padding: 80px 0;
+        }
+
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            font-size: 48px;
+            color: #0d6efd;
+            transition: color 0.3s;
+        }
+
+        .service-card:hover .service-icon {
+            color: #ffc107;
+        }
+
+        .service-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .service-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        @media (max-width: 991px) {
+            .services-container {
+                padding: 50px 15px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0" style="background-color: var(--bs-dark);">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0 text-white">Project 100</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active" style="color: var(--bs-light);">Home</a>
+                    <a href="about.html" class="nav-item nav-link" style="color: var(--bs-light);">About</a>
+                </div>
+                
+                <!-- Dark Mode Toggle Button -->
+                <button id="darkModeToggle" class="btn btn-outline-light ms-3">
+                    <i class="fa fa-moon"></i> 
+                </button>
+            </div>
+        </nav>
+    
+        <!-- Carousel Section -->
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+    
+                <!-- Carousel Item 1 -->
+                <div class="carousel-item active">
+                    <img src="img/1.jpg" class="w-100 carousel-img" alt="Image" style="height: 800px; object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3 text-center" style="max-width: 900px;">
+                            <h4 class="text-uppercase mb-3 animated slideInDown" style="color: var(--bs-secondary);">Project 100</h4>
+                            <h1 class="display-1 mb-md-4 animated zoomIn" style="color: var(--bs-light);">Transforming Spaces, Elevating Experiences</h1>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Carousel Item 2 -->
+                <div class="carousel-item">
+                    <img src="img/Modern 5 Bedroom Double Storey House - ID 25506.jpeg" class="w-100 carousel-img" alt="Image" style="height: 800px; object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3 text-center" style="max-width: 900px;">
+                            <h4 class="text-uppercase mb-3 animated slideInDown" style="color: var(--bs-secondary);">Project 100</h4>
+                            <h1 class="display-1 mb-md-4 animated zoomIn" style="color: var(--bs-light);">Transforming Spaces, Elevating Experiences</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel Section End -->
+    
+
+<!-- Dark Mode CSS -->
+<style>
+    body.dark-mode {
+        background-color: #121212;
+        color: #f8f9fa;
+    }
+
+    .dark-mode .navbar {
+        background-color: #222 !important;
+    }
+
+    .dark-mode .dropdown-menu {
+        background-color: #333;
+        border-color: #444;
+    }
+
+    .dark-mode .dropdown-item {
+        color: #f8f9fa;
+    }
+
+    .dark-mode .dropdown-item:hover {
+        background-color: #555;
+    }
+
+    .dark-mode .btn-outline-light {
+        color: #f8f9fa;
+        border-color: #f8f9fa;
+    }
+
+    .dark-mode .btn-outline-light:hover {
+        background-color: #f8f9fa;
+        color: #121212;
+    }
+
+    /* Keep Carousel Images Visible */
+    .carousel-img {
+        filter: brightness(0.8); /* Slightly darken images */
+    }
+
+    .dark-mode .carousel-img {
+        filter: brightness(1); /* Maintain normal brightness in dark mode */
+    }
+</style>
+
+<!-- Dark Mode Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.getElementById("darkModeToggle");
+        const body = document.body;
+
+        // Check for saved preference
+        if (localStorage.getItem("darkMode") === "enabled") {
+            body.classList.add("dark-mode");
+            toggleButton.innerHTML = '<i class="fa fa-sun"></i>';
+        }
+
+        toggleButton.addEventListener("click", function () {
+            body.classList.toggle("dark-mode");
+
+            // Store preference
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("darkMode", "enabled");
+                toggleButton.innerHTML = '<i class="fa fa-sun"></i>';
+            } else {
+                localStorage.setItem("darkMode", "disabled");
+                toggleButton.innerHTML = '<i class="fa fa-moon"></i>';
+            }
+        });
+    });
+</script>
+
+
+<!-- Facts Start -->
+<div class="container-fluid facts py-5 pt-lg-0">
+    <div class="container py-5 pt-lg-0">
+        <div class="row gx-0">
+
+            <!-- Happy Clients -->
+            <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                    <div class="bg-secondary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                        <i class="fa fa-users text-light"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h5 class="text-light mb-0">Happy Clients</h5>
+                        <h1 class="text-light mb-0" data-toggle="counter-up">12345</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Done -->
+            <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                    <div class="bg-secondary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                        <i class="fa fa-check text-light"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h5 class="text-light mb-0">Projects Done</h5>
+                        <h1 class="text-light mb-0" data-toggle="counter-up">12345</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Win Awards -->
+            <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                    <div class="bg-secondary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                        <i class="fa fa-award text-light"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h5 class="text-light mb-0">Win Awards</h5>
+                        <h1 class="text-light mb-0" data-toggle="counter-up">12345</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Facts End -->
+
+
+
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-3">
+        <div class="row g-3">
+
+            <!-- About Text Content -->
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-2">
+                    <h5 class="fw-bold text-secondary text-uppercase">Company Overview</h5>
+                    <h1 class="text-dark">Transforming Spaces, Elevating Experiences</h1>
+                </div>
+                <p class="mb-4 text-dark">
+                    At <strong>Project 100 Dev’t Corp.</strong>, we bring together technical excellence and premium hospitality to redefine Filipino staycations. With a strong foundation in construction, architectural design, and advanced engineering—including electrical systems, CCTV, FDAS, and high-end interior finishes—we ensure every property is built for performance, safety, and longevity.
+                    Expanding on this expertise, we develop exceptional retreats in prime beach and tourist destinations, seamlessly integrating luxury, comfort, and cutting-edge design. Our commitment to superior craftsmanship and innovative technology sets a new benchmark in hospitality and property development, delivering high-performance experiences that leave a lasting impression.
+                </p>
+
+                <!-- Contact Info -->
+                <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                    <div class="d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px; background: var(--bs-secondary);">
+                        <i class="fa fa-phone-alt text-dark" style="font-size: 24px;"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h5 class="mb-2 text-dark">Call to ask any question</h5>
+                        <h4 class="text-secondary mb-0">+012 345 6789</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/1.png" style="object-fit: cover;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    <!-- Mission & Vision Start 
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+                    <h1 class="mb-0">Our Mission & Vision</h1>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-primary">Our Mission</h4>
+                    <p>Our mission is to deliver top-tier technical services, setting high
+                        standards. We offer complete solutions—from construction and
+                        architectural design to advanced electrical systems, CCTV, FDAS,
+                        and premium interior finishes—ensuring every property is functional,
+                        safe, and built to last.
+                        Aligned with this expertise, we redefine Filipino staycations by
+                        developing premium properties in prime beach and tourist
+                        destinations. Combining luxury, comfort, and cutting-edge design,
+                        we create exceptional retreats that leave a lasting impression.</p>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-primary">Our Vision</h4>
+                    <p>Our vision is to lead the Philippine staycation industry by
+                        developing cutting-edge properties that seamlessly integrate
+                        luxury living with advanced technical solutions. Through superior
+                        design, innovative technology, and comprehensive engineering
+                        services, we aim to set a new benchmark in hospitality and
+                        property development, delivering high-performance experiences
+                        that redefine industry standards.</p>
+                </div>
+            </div>
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/vision.png" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ -->
+
+
+<!-- Features Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 700px;">
+            <h5 class="fw-bold text-secondary text-uppercase">Why Choose Us</h5>
+            <h1 class="mb-0">We Elevate Your Business With Expertise and Innovation</h1>
+        </div>
+        
+        <div class="row g-5">
+            <!-- Left Feature -->
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center p-4 rounded-4 shadow-sm bg-white position-relative overflow-hidden h-100 transition-all">
+                    <div class="icon-box text-white rounded-circle d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 70px; height: 70px; background: var(--bs-secondary);">
+                        <i class="fa fa-cubes fa-2x"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Vertical Construction</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2">Residential Construction</li>
+                        <li class="mb-2">Low Rise Buildings</li>
+                        <li>Medium Rise Buildings</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Center Feature -->
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card text-center p-4 rounded-4 shadow-sm bg-white position-relative overflow-hidden h-100 transition-all">
+                    <div class="icon-box text-white rounded-circle d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 70px; height: 70px; background: var(--bs-secondary);">
+                        <i class="fa fa-award fa-2x"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Interior & Exterior Enhancement</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2">Mall Buildings</li>
+                        <li class="mb-2">Offices Interior Fit-Out</li>
+                        <li class="mb-2">Condominium Interior Fit-Out</li>
+                        <li>Building Interior Fit-Out</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Feature -->
+            <div class="col-lg-4 col-md-12">
+                <div class="feature-card text-center p-4 rounded-4 shadow-sm bg-white position-relative overflow-hidden h-100 transition-all">
+                    <div class="icon-box text-white rounded-circle d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 70px; height: 70px; background: var(--bs-secondary);">
+                        <i class="fa fa-tools fa-2x"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Additional Works</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"></i> Engineering, Design & Build</li>
+                        <li>Supply & Install of Glass, Aluminum, PVC Windows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+
+
+
+
+<div class="container services-container">
+    <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="service-card p-4 text-center">
+                <div class="service-icon mb-3"><i class="bi bi-tools" style="color: var(--bs-secondary);"></i></div>
+                <h4 class="service-title">ELV Contracting and Execution</h4>
+                <p class="service-description">Expert ELV contracting and execution services to ensure optimal security and networking solutions.</p>
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="service-card p-4 text-center">
+                <div class="service-icon mb-3"><i class="bi bi-lightning-charge-fill" style="color: var(--bs-secondary);"></i></div>
+                <h4 class="service-title">Electrical Services</h4>
+                <p class="service-description">Providing top-quality electrical services, including installations, maintenance, and repairs.</p>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="service-card p-4 text-center">
+                <div class="service-icon mb-3"><i class="bi bi-building" style="color: var(--bs-secondary);"></i></div>
+                <h4 class="service-title">Estimation, Design, and Build</h4>
+                <p class="service-description">Expert project estimation, customized designs, and efficient construction solutions.</p>
+            </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="service-card p-4 text-center">
+                <div class="service-icon mb-3"><i class="bi bi-clipboard-data" style="color: var(--bs-secondary);"></i></div>
+                <h4 class="service-title">Site Management & Supervision</h4>
+                <p class="service-description">Professional site management, coordination, and task scheduling.</p>
+            </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="service-card p-4 text-center">
+                <div class="service-icon mb-3"><i class="bi bi-gear" style="color: var(--bs-secondary);"></i></div>
+                <h4 class="service-title">Testing & Commissioning</h4>
+                <p class="service-description">Comprehensive testing, commissioning, and handover of systems.</p>
+            </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="service-card p-4 text-center">
+                <div class="service-icon mb-3"><i class="bi bi-shield-check" style="color: var(--bs-secondary);"></i></div>
+                <h4 class="service-title">Preventive Maintenance</h4>
+                <p class="service-description">Includes fire and earthquake drills, and end-user orientation.</p>
+            </div>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="service-card p-4 text-center">
+                <div class="service-icon mb-3"><i class="bi bi-hammer" style="color: var(--bs-secondary);"></i></div>
+                <h4 class="service-title">Corrective Maintenance</h4>
+                <p class="service-description">Includes system upgrades and fixes to ensure reliability.</p>
+            </div>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="service-card p-4 text-center">
+                <div class="service-icon mb-3"><i class="bi bi-grid" style="color: var(--bs-secondary);"></i></div>
+                <h4 class="service-title">Carpet: Customized</h4>
+                <p class="service-description">Offering tailored carpet designs for unique spaces.</p>
+            </div>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="service-card p-4 text-center">
+                <div class="service-icon mb-3"><i class="bi bi-palette" style="color: var(--bs-secondary);"></i></div>
+                <h4 class="service-title">Wallpaper & Decor</h4>
+                <p class="service-description">Beautiful, stylish wallpaper and decor solutions.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        <!-- Vendor Start -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5 mb-5">
+                <div>
+                    <div class="owl-carousel vendor-carousel">
+                        <img src="img/1 copy.png" alt="">
+                        <img src="img/2.png" alt="">
+                        <img src="img/3.png" alt="">
+                        <img src="img/4.png" alt="">
+                        <img src="img/5.png" alt="">
+                        <img src="img/6.png" alt="">
+                        <img src="img/7.png" alt="">
+                        <img src="img/8.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Vendor End -->
+<!-- Footer Start -->
+<footer class="container-fluid text-light pt-5 mt-5" style="background: var(--bs-dark);">
+    <div class="container">
+        <div class="row gy-5">
+
+            <!-- About Section -->
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-gradient p-4 rounded-3 shadow-lg" 
+                     style="background: linear-gradient(135deg, var(--bs-primary), var(--bs-secondary));">
+                    <a href="index.html" class="navbar-brand text-decoration-none">
+                        <h1 class="m-0 text-white"><i class="fa fa-building me-2"></i>Project 100</h1>
+                    </a>
+                    <p class="mt-3">Delivering exceptional construction, electrical, and interior design solutions with premium quality and innovation.</p>
+                </div>
+            </div>
+
+            <!-- Key Highlights Section -->
+            <div class="col-lg-4 col-md-6">
+                <h3 class="mb-4" style="color: var(--bs-primary);">Key Highlights</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-3 d-flex align-items-center">
+                        <i class="bi bi-check-circle me-3 fs-5" style="color: var(--bs-secondary);"></i>
+                        <span>General Construction – Vertical construction, design & build, and structural enhancements.</span>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center">
+                        <i class="bi bi-check-circle me-3 fs-5" style="color: var(--bs-secondary);"></i>
+                        <span>Interior & Exterior Enhancements – Premium finishing and custom design solutions.</span>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center">
+                        <i class="bi bi-check-circle me-3 fs-5" style="color: var(--bs-secondary);"></i>
+                        <span>Electrical & Safety Systems – Advanced installations and smart automation.</span>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center">
+                        <i class="bi bi-check-circle me-3 fs-5" style="color: var(--bs-secondary);"></i>
+                        <span>Custom Interiors & Furniture – High-end finishes and bespoke furniture.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="col-lg-4 col-md-12">
+                <h3 class="mb-4" style="color: var(--bs-primary);">Get In Touch</h3>
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-geo-alt me-3 fs-5" style="color: var(--bs-secondary);"></i>
+                    <p class="mb-0">123 Street, New York, USA</p>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-envelope-open me-3 fs-5" style="color: var(--bs-secondary);"></i>
+                    <p class="mb-0">info@example.com</p>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-telephone me-3 fs-5" style="color: var(--bs-secondary);"></i>
+                    <p class="mb-0">+012 345 67890</p>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="d-flex mt-4">
+                    <a class="btn btn-outline-light btn-lg rounded-circle me-2 social-btn" href="#" 
+                       aria-label="Twitter" style="border-color: var(--bs-secondary); color: var(--bs-secondary);">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-lg rounded-circle me-2 social-btn" href="#" 
+                       aria-label="Facebook" style="border-color: var(--bs-secondary); color: var(--bs-secondary);">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-lg rounded-circle me-2 social-btn" href="#" 
+                       aria-label="LinkedIn" style="border-color: var(--bs-secondary); color: var(--bs-secondary);">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-lg rounded-circle social-btn" href="#" 
+                       aria-label="Instagram" style="border-color: var(--bs-secondary); color: var(--bs-secondary);">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <p class="text-muted small">© 2025 Project 100. All Rights Reserved. | Designed by 
+                    <a href="#" class="text-decoration-none" style="color: var(--bs-primary);">GGH Software Development Services</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
